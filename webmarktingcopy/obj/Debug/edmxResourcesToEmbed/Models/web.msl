@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="web_managementEntities">
+    <EntitySetMapping Name="website_details">
+      <EntityTypeMapping TypeName="Model.website_details">
+        <MappingFragment StoreEntitySet="website_details">
+          <ScalarProperty Name="transfer_point" ColumnName="transfer_point" />
+          <ScalarProperty Name="total_point" ColumnName="total_point" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_registration">
+      <EntityTypeMapping TypeName="Model.User_registration">
+        <MappingFragment StoreEntitySet="User_registration">
+          <ScalarProperty Name="Postal_code" ColumnName="Postal_code" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Mobile_n" ColumnName="Mobile_n" />
+          <ScalarProperty Name="Re_Password" ColumnName="Re_Password" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
