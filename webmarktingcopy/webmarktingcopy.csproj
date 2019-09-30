@@ -109,6 +109,7 @@
     <Content Include="Content\them\assets\img\icons\common\google.svg" />
     <Content Include="Content\them\assets\img\theme\angular.jpg" />
     <Content Include="Content\them\assets\img\theme\bootstrap.jpg" />
+    <Content Include="Content\them\assets\img\theme\download.jpg" />
     <Content Include="Content\them\assets\img\theme\profile-cover.jpg" />
     <Content Include="Content\them\assets\img\theme\react.jpg" />
     <Content Include="Content\them\assets\img\theme\sketch.jpg" />
@@ -2118,6 +2119,8 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\profile.cshtml" />
+    <Content Include="Views\Shared\About.cshtml" />
+    <Content Include="Views\Home\aboutme.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

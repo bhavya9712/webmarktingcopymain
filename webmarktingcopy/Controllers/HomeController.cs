@@ -27,6 +27,10 @@ namespace webmarktingcopy.Controllers
         {
             return View();
         }
+        public ActionResult aboutme()
+        {
+            return View();
+        }
         
         public JsonResult Getprofiledata()
         {
@@ -118,6 +122,7 @@ namespace webmarktingcopy.Controllers
                     lstUser.City = profileCntr.City;
                     lstUser.Address = profileCntr.Address;
                     lstUser.Email = profileCntr.Email;
+                    lstUser.Gender = profileCntr.Gender;
                     dbContext.SaveChanges();
                     return " Updated";
                 }
@@ -126,6 +131,19 @@ namespace webmarktingcopy.Controllers
             {
                 return "Oops! something went wrong.";
             }
+        }
+        public ActionResult LogOutSession()
+        {
+            Session.Remove("id");
+            Session.Remove("User_Name");
+            Session.Remove("Gender");
+            Session.Remove("Mobile_n");
+            Session.Remove("Address");
+            Session.Remove("Email");
+            Session.Remove("City");
+            Session.Remove("Postal_code");
+            Session.Remove("Country");
+            return RedirectToAction("Login", "Home");
         }
     }
 }

@@ -54,6 +54,17 @@
         });
         return result;
     }
+    this.LogOutSession = function (Userreg) {
+        debugger
+
+        var result = $http({
+            method: "Post",
+            url: "/Home/LogOutSession", //pass UserData values to class file  
+            data: JSON.stringify(Userreg),
+            dataType: "json"
+        });
+        return result;
+    }
 
 
 

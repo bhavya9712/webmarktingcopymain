@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="88399fb1c2b842879e6bcb3596b736b6" Name="Diagram1">
-        <EntityTypeShape EntityType="Model.website_details" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="Model.User_registration" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.sitedetil" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

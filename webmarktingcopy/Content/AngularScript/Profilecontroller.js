@@ -1,6 +1,8 @@
 ﻿app.controller("profileCntr", function ($scope, $location, $window, UserService) {
     $scope.profileCntr = {}
+    
     $scope.Getprofiledata = function () {
+        debugger
         UserService.Getprofiledata().success(function (pro) {
             $scope.profileCntr = pro;
         }).error(function () {
@@ -8,6 +10,25 @@
         });
     }
 
+    $scope.LogOutSession = function () {
+        debugger
+        UserService.LogOutSession().then(function (pl) {
+            //result data 
+            debugger
+            if (pl.data.Email == null) {
+                alert('LogOut');
+                $window.location.href = 'Login';
+            }
+            else {
+                alert('LogOut incorrect');
+            }
+
+        });
+
+    }
+
+
+    debugger
     $scope.Getprofiledata();
 
     $scope.Updateuser = function (User_registration) {
@@ -22,6 +43,7 @@
             City: $scope.City;
             Address: $scope.Address;
             Email: $scope.Email;
+            Gender: $scope.Gender;
             alert(' get records');
 
         }, function () {

@@ -1,4 +1,5 @@
-﻿app.controller("userCntr", function ($scope, $location, $window, UserService) {
+﻿/// <reference path="UserController.js" />
+app.controller("userCntr", function ($scope, $location, $window, UserService) {
     $scope.dvUser = false;
     $scope.users = [];
 
@@ -8,7 +9,7 @@
         UserService.AddNewUser(Web).success(function (msg) {
             $scope.users.push(msg)
             window.location.reload();
-            $window.location.href = 'Login';
+            $window.location.href = '/home/Login';
         }, function () {
             alert('Error in adding record');
         });
@@ -29,7 +30,7 @@
             debugger
             if (pl.data.Email != null) {
                 alert(pl.data.Email);
-                $window.location.href = 'profile';
+                $window.location.href = '/home/profile';
                 GetusertList();
             }
             else {
@@ -40,5 +41,8 @@
 
     }
 
+
+
+    
 }
 )

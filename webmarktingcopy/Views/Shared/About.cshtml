@@ -1,4 +1,4 @@
-﻿<html lang="en" ng-app="WebApp">
+﻿ <html lang="en" ng-app="WebApp">
 
 <head>
     <meta charset="utf-8" />
@@ -29,7 +29,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Brand -->
-                
+            <a class="navbar-brand pt-0" href="../index.html">
+                <img src="~/Content/them/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            </a>
             <!-- User -->
             <ul class="nav align-items-center d-md-none">
                 <li class="nav-item dropdown">
@@ -127,18 +129,20 @@
                             <i class="ni ni-pin-3 text-orange"></i>Maps
                         </a>
                     </li>
-                        -->
+                        
+                  
                     <li class="nav-item">
                         <a class="nav-link  active " href="../examples/profile.html">
                             <i class="ni ni-single-02 text-yellow"></i>User profile
                         </a>
                     </li>
+                        -->
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/tables.html">
                             <i class="ni ni-bullet-list-67 text-red"></i>Tables
                         </a>
                     </li>
-                        <!--
+                      
                     <li class="nav-item">
                         <a class="nav-link" href="../examples/login.html">
                             <i class="ni ni-key-25 text-info"></i>Login
@@ -149,7 +153,7 @@
                             <i class="ni ni-circle-08 text-pink"></i>Register
                         </a>
                     </li>
-                             -->
+                             
                 </ul>
                 <!-- Divider -->
                 <hr class="my-3">
@@ -176,8 +180,8 @@
         <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
             <div class="container-fluid">
                 <!-- Brand -->
-                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">User Profile</a>
-                <!-- Form -->
+               <!-- Form -->
+                <!--
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
                     <div class="form-group mb-0">
                         <div class="input-group input-group-alternative">
@@ -188,21 +192,15 @@
                         </div>
                     </div>
                 </form>
+                    -->
                 <!-- User -->
                 <ul class="navbar-nav align-items-center d-none d-md-flex">
                     <li class="nav-item dropdown">
                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="media align-items-center">
-                                <span class="avatar avatar-sm rounded-circle">
-                                    <img alt="Image placeholder" src="~/Content/them/assets/img/theme/team-4-800x800.jpg">
-                                </span>
-                                <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
-                                </div>
-                            </div>
+                             
                         </a>
                         <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right" >
-
+<!-- 
                             <div class=" dropdown-header noti-title">
                                 <h6 class="text-overflow m-0">Welcome!</h6>
                             </div>
@@ -228,25 +226,15 @@
                                 <span>Logout</span>
                             </a>
                         </div>
+     -->
                     </li>
                 </ul>
             </div>
+   
         </nav>
         <!-- End Navbar -->
         <!-- Header -->
-        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(../assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
-            <!-- Mask -->
-            <span class="mask bg-gradient-default opacity-8"></span>
-            <!-- Header container -->
-            <div class="container-fluid d-flex align-items-center">
-                <div class="row">
-                    <div class="col-lg-7 col-md-10">
-                        <h1 class="display-2 text-white">Hello Jesse</h1>
-                        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-                        <a href="#!" class="btn btn-info">Edit profile</a>
-                    </div>
-                </div>
-            </div>
+         
         </div>
         @RenderBody()
         <footer class="footer">
@@ -257,26 +245,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-6">
-
-                    <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/home/aboutme" class="nav-link" target="_blank">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                        </li>
-
-                    </ul>
-
-                </div>
+                 
             </div>
         </footer>
     </div>
